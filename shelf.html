@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Duana Laurent">
+    <title>Furniture Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+
+  <div class="img-container">
+    <nav>
+        <li>
+            <a href="index.html">Home</a>
+          </li>
+      
+          <li>
+            <a href="chair.html">Chair</a>
+          </li>
+    
+          <li>
+            <a href="couch.html">Sofa</a>
+          </li>
+    
+          <li>
+            <a href="shelf.html">Shelf</a>
+          </li>
+    </nav>
+
+    <div class="inner-container">
+        <h1>LES MEUBLES</h1>
+        <h2>Your one-stop furniture shop.</h2>
+        <a id="change" class="btn" href="#">SHOP NOW</a>
+    </div>
+  </div>
+
+  <main>
+    <div class="main-container">
+        <div class="col-1">
+
+            <div id="shelf">
+                <model-viewer loading="eager" 
+                camera-controls touch-action="pan-y" auto-rotate
+                poster="images/shelf.png" 
+                src="models/Shelf.glb" 
+                shadow-intensity="1" alt="A 3D model of a chair">
+
+                <button class="hotspot" slot="hotspot-visor" data-position="0.90 0.20 0.35" data-normal="0 0 1"> 
+                    <div class="annotation">Premium Glass Frame</div> 
+                </button>
+
+            </model-viewer>
+            </div>
+        
+            
+            
+        </div>
+    
+        <div class="col-2">
+            <h2 class="product-title">Mirage Shelf</h2>
+            <h3 class="collection">SYDNEY COLLECTION</h3>
+            <h3 class="price">$135</h3>
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+            <p>
+                This is 5 tier wire shelf, all the shelf is can adjust height. 
+                The shelving unit is made of steel wire shelving. The weight limit 
+                for each shelf is 250 pounds, and the total weight limit for the 
+                entire shelf is 1250 pounds. The storage shelves provide an 
+                enormous amount of space for you and do occupy too much space. 
+                You can use this wire shelving in the kitchen bedroom garage and more. 
+                Tools, books, household appliances, and other things can be placed 
+                on this glass shelving.
+            </p>
+
+        </div>
+    </div>
+    
+    
+
+  </main>
+  
+    
+</body>
+</html>
